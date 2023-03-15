@@ -1,0 +1,168 @@
+*{    /* GERAL - onde fica casa coisa */
+  font-size: 25px;
+  font-family: Roboto;
+  color: black;
+  text-decoration: none;
+  text-align: center
+}
+
+
+p{    /* Apenas p e como vai vao ficar no centro*/
+  color: black;
+  text-align: center
+}
+
+
+h1, h2{
+  font-size: 40px;
+  font-weight: 400;
+  color: red;
+  text-align: center;
+}
+
+
+table{   /* botar a table no centro*/
+  margin: 0 auto 0 auto;
+  max-width: 600px;
+}
+
+
+.foto{ /* IMAGEM - onde ela vai ficar */
+ text-align: center
+}
+
+
+#banner2{ /* IMAGEM tamanho e pode ser feito o circulo tambem */
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    border: 5px solid red;
+    }
+
+
+.gallery-container{ /* GALERIA forma que vão ficar*/
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       gap: 2vw;
+       padding: 0 2vw;
+     }
+
+
+.gallery-items{ /* GALERIA tamanho das fotos e borda*/
+       width: 300px;
+       height: 300px;
+       border: 15px solid #FFF;
+       box-shadow: 5px 5px 5px #0006;
+       flex-grow: 1;
+       transition: transform .5s linear;
+     }
+
+
+.gallery-items img { /* GALERIA tamanho do espaço da galeria*/
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+     }
+
+footer img{ /* CONTATO imagem tamanho do espaço*/
+  width:40px;
+  height:40px;
+}
+
+
+footer { /* CONTATO onde fica os logos*/
+  display:flex;
+  justify-content: center;
+}
+
+
+footer { /* CONTATO onde fica os logos*/
+  display:flex;
+  justify-content: center;
+}
+
+
+footer a{ /* CONTATO afastar um do outro*/
+  margin: 20px;
+}
+
+
+.gallery-items:hover{ /* GALERIA quando aumenta a foto*/
+       transform: scale(1.3);
+    }
+
+
+body{    /* NAV RESPONSIVO - a barra de navegação ficar full na tela */
+    margin: 0px;
+    padding: 0px;
+    }
+
+
+nav { /* NAV RESPONSIVO - parte colorida da HEAD e tamanho de onde fica os botoes */
+  width:100%;
+  background: rgb(0, 0, 0);
+  padding: 1.4em 1.0em;
+}
+
+
+nav ul { /* NAV RESPONSIVO - parte de como fica separadas e estilo */
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+}
+
+nav ul li { /* NAV RESPONSIVO - tamanho das fotos e espessura das letras */
+  margin: 0;
+  font-weight: 800;
+}
+
+nav ul li a{ /* NAV RESPONSIVO - tava dando conflito com a table e ficando preta, foi a unica saida */
+  color: white;
+}
+
+
+nav ul li a:link { /* NAV RESPONSIVO - tamanho das fotos e espessura das letras */
+  color: white;
+}
+
+
+[for="menu-toggle"] { /* NAV RESPONSIVO - tira decoração idiota */
+   text-decoration: none;
+}
+
+
+[for="menu-toggle"] { /* NAV RESPONSIVO - tira decoração idiota */
+   color: white;
+   cursor: pointer;
+}
+
+
+[for="menu-toggle"]:hover { /* NAV RESPONSIVO - tira decoração idiota */
+   text-decoration: none;
+}
+
+
+#menu-toggle { /* NAV RESPONSIVO - tira decoração idiota */
+ display: none;
+}
+
+
+#menu-toggle:checked + ul { /* NAV RESPONSIVO - tira decoração idiota */
+    display: flex;
+}
+
+
+@media screen and (min-width: 850px) { /* NAV RESPONSIVO - tira decoração idiota */
+    nav ul {
+    display: flex;
+    flex-direction: row;
+    }
+    [for="menu-toggle"] {
+       display: none;
+    }
+
+}
+

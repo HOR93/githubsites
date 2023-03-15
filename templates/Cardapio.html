@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Cardapio e preços</h2>
+<table class="table table-hover table-dark">
+   <thead>
+      <tr>
+         <th scope="col">id</th>
+         <th scope="col">name</th>
+         <th scope="col">price</th>
+      </tr>
+   </thead>
+   <tbody>
+      {% for Preços in pratos %}
+      <tr>
+         <td> {{Preços.id}} </td>
+         <td> {{Preços.name}} </td>
+         <td> {{Preços.price}}R$ </td>
+      </tr>
+      {% endfor %}
+   </tbody>
+</table>
+{% endblock %}

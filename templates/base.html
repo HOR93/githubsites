@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Nuovo Vesuvio</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <label for ="menu-toggle">menu</label>
+            <input type="checkbox" id="menu-toggle">
+            <ul>
+               <li><a href="{{url_for('inicio')}}">Inicio</a></li>
+               <li><a href="{{url_for('Sobre')}}">Sobre</a></li>
+               <li><a href="{{url_for('Cardapio')}}">Cardapio</a></li>
+               <li><a href="{{url_for('Reserva')}}">Reserva</a></li>
+               <li><a href="{{url_for('Contato')}}">Contato</a></li>
+            </ul>
+         </nav>
+      </header>
+          {% block content %}
+
+           {% endblock %}
+
+   </body>
+</html>
+
